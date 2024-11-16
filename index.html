@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Trafix App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-section {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-header h2 {
+            margin: 0;
+        }
+        .profile-info {
+            margin-top: 20px;
+        }
+        .profile-info p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .achievements {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .achievements h3 {
+            margin-top: 0;
+        }
+        .achievement-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .achievement-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .settings-button, .logout-button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .logout-button {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Trafix App - User Profile</h1>
+</header>
+
+<div class="container">
+    <div class="profile-section">
+        <div class="profile-header">
+            <img src="profile-pic-placeholder.jpg" alt="Profile Picture">
+            <div>
+                <h2 id="username">John Doe</h2>
+                <p id="email">email@example.com</p>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <p>Total Points: <span id="total-points">150</span></p>
+            <p>Last Login: <span id="last-login">2024-11-10</span></p>
+        </div>
+
+        <div class="achievements">
+            <h3>Achievements</h3>
+            <div class="achievement-list">
+                <div class="achievement-item">5km Challenge</div>
+                <div class="achievement-item">Daily Login</div>
+                <div class="achievement-item">Travel 1km</div>
+            </div>
+        </div>
+
+        <button class="settings-button" onclick="updateProfile()">Update Profile</button>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<script>
+    // Example functions for updating profile and logging out
+    function updateProfile() {
+        alert("Profile Update feature is under development.");
+    }
+
+    function logout() {
+        window.location.href = "login.html"; // Redirect to login page
+    }
+</script>
+
+</body>
+</html>
